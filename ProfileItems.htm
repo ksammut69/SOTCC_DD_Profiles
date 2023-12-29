@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>SOTCC- Direct Debits Dataloader Creation Tool</title>
+</head>
+<body>
+    <h1>SOTCC - Direct Debits Dataloader Creation Tool</h1>
+
+    <form action="ProfileItemsGenerator.php" method="POST">
+
+        Start Date <input name = "start_date" type="date" size="10"><br /><br />
+        End Date <input name = "end_date" type="date" size="10"><br /><br />
+
+        Financial Admin Unit <select name = "AdminUnit">
+            <option value="">Please Select</option>
+            <option value="SERCHAR">SERCHAR</option>
+            <option value="WEEKLY">WEEKLY</option>
+            <option value="SUPTHOUSING">SUPTHOUSING</option>
+            <option value="SHELTHOUSING">SHELTHOUSING</option>
+        </select><br /><br />
+        Debit Periods (Number of weeks in year less Rent Free Weeks)<input name="debit_periods" type ="number"><br /><br />
+        Free Weeks No's (Comma Separated) <input type="text" size="20" name="FreeWeeks"><br /><br />
+       
+
+        <b>Monthly Payment Profiles Required</b><br /><br />
+        AnyDay Direct Debits DD1 to DD28 <input type="checkbox" name="anyday"><br /><br />
+        DDM to DDM4 ( Mondays in Month ) <input type="checkbox" name="ddm"><br /><br />
+
+        <b>Weekly Payment Profiles Required</b><br /><br />
+        DDW (Weekly on Mondays) <input type="checkbox" name="DDW"><br /><br />
+        DDWF (Weekly on Fridays) <input type="checkbox" name="DDWF"><br /><br />
+        
+        UK Region <select name="region">
+            <option value="england-and-wales">England and Wales</option>
+            <option value="scotland">Scotland</option>
+            <option value="northern-ireland">Northern Ireland</option>
+        </select><br /><br />
+        <input type="submit" value="Generate Profiles" />
+
+    </form>
+</body>
+</html>
