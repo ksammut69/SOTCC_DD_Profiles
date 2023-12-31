@@ -1,3 +1,3 @@
-PHP scripting specificly to produce dataloader files for SOT CC.
+PHP scripting specifically to produce annual direct debit dataloader files for SOT CC.
 
-Needs Folder name GeneratedProfiles to store the profiles ready for uploading. Otherwise copy and paste Profiles and ProfileItems from output pages.
+Needs Folder name GeneratedProfiles with write access to store the profiles ready for uploading. 
